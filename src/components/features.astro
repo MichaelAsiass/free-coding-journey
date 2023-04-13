@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Become Job Ready",
+    description:
+      "Get practical tips and advice on how to become job ready and succeed in your programming career, from building a strong portfolio to acing technical interviews.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "100% free resources",
+    description:
+      "Discover 100% free resources and tips to help you learn and grow as a programmer",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Relevant Skills & Information",
+    description:
+      "Learn about the latest industry trends and stay up-to-date on the newest programming technologies ",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Creating Your Online Presence as a Programmer",
+    description:
+      "Learn how to build your personal brand as a programmer and create a strong online presence that will help you stand out to potential employers.",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Tools and Resources",
+    description:
+      "Many programmers work on projects together and need tools to collaborate effectively, learn here about the best tools and resources to help you work better with others",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Community of Developers for Developers",
+    description:
+      "Connect with a community of fellow programmers and share your experiences and insights",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0" style= "text-align: center;">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    From Zero to Hero: As A Programmer
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Going Above & Beyond On Your Programming Journey.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
