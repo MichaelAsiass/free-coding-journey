@@ -7,8 +7,8 @@ image: {
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"
-category: "Tutorials"
-author: "Janette Lynch"
+category: "Blog"
+author: "M.W"
 tags: [webdev, tailwindcss, frontend]
 ---
 

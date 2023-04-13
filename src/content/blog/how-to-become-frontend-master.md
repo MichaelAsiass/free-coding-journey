@@ -7,8 +7,8 @@ image: {
     alt: "frontend master"
 }
 publishDate: "2022-11-07 15:39"
-category: "Tutorials"
-author: "Connor Lopez"
+category: "Blog"
+author: "M. W"
 tags: [astro, tailwindcss, frontend]
 ---
 
